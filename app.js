@@ -1,8 +1,6 @@
 const qrcode = require("qrcode-terminal");
 const axios = require("axios").default;
 
-const token = "apis-token-2243.hheNJ-7pP6eXmtkL8oRGGkypYpQqzQ0x";
-
 const getDni = async (dni) => {
 	const path = "https://api.apis.net.pe/v1/dni?numero=" + dni;
 	return axios.get(path, {
