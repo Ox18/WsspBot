@@ -3,11 +3,7 @@ const axios = require("axios").default;
 
 const getDni = async (dni) => {
 	const path = "https://api.apis.net.pe/v1/dni?numero=" + dni;
-	return axios.get(path, {
-		headers: {
-			Authorization: "Bearer " + token,
-		},
-	});
+	return axios.get(path);
 };
 
 const { Client } = require("whatsapp-web.js");
