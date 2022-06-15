@@ -1,4 +1,4 @@
-// TEST
+
 const qrcode = require("qrcode-terminal");
 const axios = require("axios").default;
 
